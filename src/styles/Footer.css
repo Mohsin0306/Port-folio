@@ -1,0 +1,17 @@
+.footer {
+    background-color: #1a202c; /* Tailwind's gray-900 */
+    background: linear-gradient(to right, rgb(4, 4, 110), rgb(0, 0, 0));
+}
+
+.footer a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #805ad5; /* Tailwind's purple-500 */
+}
+
+.footer i {
+    font-size: 1.25rem;
+}

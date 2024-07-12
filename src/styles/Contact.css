@@ -1,0 +1,96 @@
+/* Contact.css */
+
+/* Container and form */
+.container {
+  padding: 0 1rem;
+}
+
+.max-w-lg {
+  max-width: 28rem; /* Adjust max-width for responsiveness */
+  margin: 0 auto;
+}
+
+/* Input and textarea styles */
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2d3748; /* Darker gray background */
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff; /* White text */
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+  color: #a0aec0; /* Light gray placeholder text */
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  background-color: #1a202c; /* Darker gray on focus */
+}
+
+.textarea-field {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Button styles */
+.btn-submit {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to right, #805ad5, #fc8181); /* Gradient background */
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff; /* White text */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-image: linear-gradient(to right, #6a48b7, #f56565); /* Darker gradient on hover */
+}
+
+/* Fade effect */
+.fade-transition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  background-image: linear-gradient(to top, rgba(45, 55, 72, 0.95), rgba(45, 55, 72, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+.success-message {
+  background-color: #1256a379; /* Green background */
+  backdrop-filter: blur(10px);
+  color: #fff; /* White text */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease-in-out; /* Optional animation */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .max-w-lg {
+      max-width: 34rem; /* Adjust max-width for larger screens */
+  }
+}
